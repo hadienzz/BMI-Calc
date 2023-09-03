@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Jost:wght@400;500;600&display=swap');
+
+:root {
+    --underweight: orange;
+    --normal: green;
+    --overweight: lightcoral;
+    --obese: crimson;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background-color: #004d4d;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container {
+    background: #fff;
+    font-family: sans-serif;
+    max-width: 420px;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgb(0, 0, 0, 0.25);
+    gap: 1rem;
+    display: grid;
+}
+
+.calculator {
+    display: grid;
+    gap: 1px;
+}
+
+.calculator input { 
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    margin: 5px 30px;
+    gap: 3px;
+}
+
+.calculator label {
+    font-weight: bold;
+}
+
+.btn-area {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.btn-area button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#reset {
+    background: #444;
+}
+
+#submit {
+    background-color: #00a1a3;
+}
+
+#reset:hover, #submit:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+.output {
+    text-align: center;
+}
+
+.output #bmi {
+    font-size: 4rem;
+}
+
+.bmi-scale{
+    display: flex;
+    justify-content: center;
+} 
+
+.bmi-scale h4 {
+    font-size: 0.75rem;
+    color: slategray;
+}
+
+.bmi-scale div {
+    width: 100%;
+    border-top: 5px solid var(--color);
+    text-align: center;
+}
