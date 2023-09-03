@@ -6,8 +6,6 @@ const weightInput = document.getElementById('inputWeight')
 const submit = document.getElementById('submit')
 const reset = document.querySelector('#reset')
 
-
-
 submit.addEventListener('click', (e) => {
     e.preventDefault()
 
